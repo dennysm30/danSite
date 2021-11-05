@@ -111,7 +111,7 @@ header .nav {
 
 /* Links inside the dropdown */
 .dropdown-content .nav li a {
-	color: black;
+	color: var(--black);
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
@@ -327,35 +327,77 @@ main .contact-me h2 {
 	color: var(--white);
 }
 
-main .contact-me .contact-me__container {
+.bg-img {
 	display: flex;
+	/* The image used */
+	/* background-image: url('./assets/images/img-fondo.png'); */
+
+	min-height: 380px;
+
+	/* Center and scale the image nicely */
+	/* background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+	display: flex;
+	position: relative;
+	margin: 20px;
+	width: 100%;
+	padding: 16px;
+	background-color: white;
 	flex-direction: column;
-	margin: 1rem 2rem;
-}
-main .contact-me .contact-me .container__name {
-	border-radius: 50%;
-	border: 2px solid var(--celest);
-	border-style: outset;
-	background: var(--soft-black);
-	box-shadow: 3px 5px #252a2e;
 }
 
-main .contact-me .contact-me__container input {
+/* Full-width input fields */
+input[type='text'],
+textarea {
 	width: 100%;
-	margin-top: 1rem;
-	margin-bottom: 0.5rem;
-	border: 1px solid var(--celest);
-	border-style: outset;
-	background: var(--soft-black);
-	box-shadow: 3px 5px #252a2e;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: var(--soft-grey);
+	box-shadow: 5px 5px var(--dark-grey);
 }
 
-main .contact-me .contact-me__container textarea {
-	width: 100%;
-	margin-top: 1rem;
-	margin-bottom: 0.5rem;
-	border: 1px solid var(--celest);
-	border-style: outset;
-	background: var(--soft-black);
-	box-shadow: 3px 5px #252a2e;
+input[type='text']:focus,
+textarea:focus {
+	background-color: var(--dark-grey);
+	outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+	background-color: var(--dark-grey);
+	color: var(--white);
+	padding: 12 px 11 px;
+	border: none;
+	cursor: pointer;
+	width: 80px;
+	height: 30px;
+	opacity: 0.9;
+	box-shadow: 5px 5px var(--soft-grey);
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+.contact-me__buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 0 10px 20px 10px;
+}
+
+.contact-me__buttons button {
+	width: 30px;
+	height: 30px;
+	background-color: var(--soft-black);
 }
