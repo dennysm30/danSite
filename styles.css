@@ -17,7 +17,7 @@
 	--h1-size-mobile: 2rem;
 	--h2-title: 'Roboto Slab', serif;
 	--h2-title-size: 7rem;
-	--h2--title-size-mobile: 2rem;
+	--h2-title-size-mobile: 2rem;
 	--h3-subtitle: 'Roboto Slab', serif;
 	--h3-subtitle-size: 4rem;
 	--h3-subtitle-size-mobile: 1.8rem;
@@ -242,7 +242,7 @@ main .whoami-container p {
 
 .numbertext h2 {
 	font-family: var(--h2-title);
-	font-size: var(--h2--title-size-mobile);
+	font-size: var(--h2-title-size-mobile);
 	margin-left: 3rem;
 	margin-top: 0.5rem;
 	margin-bottom: 1rem;
@@ -320,10 +320,24 @@ main .contact-me {
 	margin: 0;
 }
 
+main .contact-me h2 {
+	align-self: center;
+	font-family: var(--h2-title);
+	font-size: var(--h2-title-size-mobile);
+	color: var(--white);
+}
+
 main .contact-me .contact-me__container {
 	display: flex;
 	flex-direction: column;
 	margin: 1rem 2rem;
+}
+main .contact-me .contact-me .container__name {
+	border-radius: 50%;
+	border: 2px solid var(--celest);
+	border-style: outset;
+	background: var(--soft-black);
+	box-shadow: 3px 5px #252a2e;
 }
 
 main .contact-me .contact-me__container input {
@@ -332,7 +346,6 @@ main .contact-me .contact-me__container input {
 	margin-bottom: 0.5rem;
 	border: 1px solid var(--celest);
 	border-style: outset;
-	border-radius: 10px;
 	background: var(--soft-black);
 	box-shadow: 3px 5px #252a2e;
 }
@@ -343,11 +356,6 @@ main .contact-me .contact-me__container textarea {
 	margin-bottom: 0.5rem;
 	border: 1px solid var(--celest);
 	border-style: outset;
-	border-radius: 10px;
 	background: var(--soft-black);
 	box-shadow: 3px 5px #252a2e;
-}
-
-main .contact-me .contact-me__container button {
-	align-self: right;
 }

@@ -263,32 +263,38 @@
 				<div class="contact-me__container">
 					<h2>Contact Me</h2>
 					<form action="">
-						<label for="nombre">
-							<input
-								type="text"
-								id="nombre"
-								placeholder="    Full Name"
-								autocomplete="name"
-							/>
-						</label>
-						<label for="e-mail">
-							<input
-								type="email"
-								id="e-mail"
-								placeholder="    Email Address"
-								autocomplete="email"
-							/>
-						</label>
-						<label for="message">
-							<textarea
-								name="message"
-								id="message"
-								cols="34"
-								rows="10"
-								autocomplete="off"
-								placeholder="  Message"
-							></textarea>
-						</label>
+						<div class="container__name">
+							<label for="nombre">
+								<input
+									type="text"
+									id="nombre"
+									placeholder="    Full Name"
+									autocomplete="name"
+								/>
+							</label>
+						</div>
+						<div class="container__email">
+							<label for="e-mail">
+								<input
+									type="email"
+									id="e-mail"
+									placeholder="    Email Address"
+									autocomplete="email"
+								/>
+							</label>
+						</div>
+						<div class="container__message">
+							<label for="message">
+								<textarea
+									name="message"
+									id="message"
+									cols="34"
+									rows="10"
+									autocomplete="off"
+									placeholder="  Message"
+								></textarea>
+							</label>
+						</div>
 						<button type="submit">
 							Send
 							<img src="./assets/icons/share-solid.svg" alt="send message" />
